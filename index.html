@@ -1,1 +1,43 @@
-Hello World
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>gzhnciha</title>
+
+<link rel="stylesheet" href="src/css/main.css" />
+<!-- <script type="text/javascript" src="src/js/main.js" ></script> -->
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script>
+// $(function(){
+//     $(".main_nav li").on("click", function(){
+//         var address = $(this).attr("data-src");
+//         $("iframe").attr("src", address);
+
+//     });
+// });
+</script>
+</head>
+<body>
+    <div class="main_nav">
+        <ul>
+            <li data-src="1.html"> 111 </li>
+            <li data-src="2.html"> 222 </li>
+        </ul>
+    </div>
+
+    <div class="main_content">
+        <iframe id="frame" src="1.html" frameborder="0" width="80%" scrolling="yes" height="100%" leftmargin="0" topmargin="0"></iframe>
+    </div>
+
+</body>
+<script>
+        $(function(){
+            $(".main_nav li").on("click", function(){
+                var address = $(this).attr("data-src");
+                $("iframe").attr("src", address);
+        
+            });
+        });
+</script>
+
+</html>
+
