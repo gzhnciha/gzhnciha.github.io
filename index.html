@@ -3,10 +3,37 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Chi Zhang</title>
+    <style>
+        body {
+    font-family: "Times New Roman", Times, serif;
+  }
+       ul {
+      list-style-position: inside; /* 确保标记在内容内部 */
+    }
+
+
+    li span {
+      display: block; /* 强制每个span换行 */
+      padding-left: 20px; /* 为每个span设置缩进 */
+    }
+    .image-div {
+    float: left; /* 让图片所在的 div 向左浮动 */
+    margin-right: 20px; /* 图片和文字之间的间距 */
+  }
+  .text-div {
+    overflow: hidden; /* 确保文字不被浮动影响 */
+  }
+  .container {
+    display: flex; /* 图片和文字并排 */
+    align-items: center;
+    margin-bottom: 20px; /* 给新段落留空 */
+  }
+    </style>
 </head>
 <body>
-
-
+<div class="container">
+    <div class="image-div"> <img src="assets/image/zhangchi.png" alt="照片"   height="300"/> </div>
+    <div class="text-div">
     <h1>Chi Zhang 张弛</h1>
     <a href="https://ci.hfut.edu.cn/">School of Computer Science and Information Engineering</a><br>
     <a href="https://www.hfut.edu.cn/">Hefei University of Technology</a> </br>
@@ -19,19 +46,21 @@
     <hr>
 
     <p>
-    主要研究移动边缘计算和数据中心网络中的在线问题，包括流调度、任务调度、文件缓存等，旨在针对实际中的网络问题提供具有理论性能保证的在线解决方案。
-    Recently I am mainly working on online problems in mobile edge computing and data center networks, including flow scheduling, job scheduling, and file caching, aiming at online solution with performance guarantees for practical networking issues
+    主要研究移动边缘计算和数据中心网络中的在线问题，包括流调度、任务调度、文件缓存等，旨在针对实际中的网络问题提供具有理论性能保证的在线解决方案。</br>
+    Recently I am mainly working on online problems in mobile edge computing and data center networks, including flow scheduling, job scheduling, and file caching, aiming at online solution with performance guarantees for practical networking issues.
     </p>
 
-
-    <hr>
-
+</div>
+</div>
     <h2>Research</h2>
     <h3>Journal Papers </h3>
-    <LI><b>Online Approximation Scheme for Scheduling Heterogeneous Utility Jobs in Edge Computing</b>
-        [<a href="assets/paper/TON 2023.pdf">paper</a>]. </br>
-        <b>Chi Zhang</b>, Haisheng Tan, Haoqiang Huang, Zhenhua Han, Shaofeng H-C Jiang, Guopeng Li, Xiang-Yang Li, </br>
-        IEEE/ACM Transactions on Networking (ToN) 2023. (<b>CCF-A</b>)
+    <ul>
+    <li> <b>Online Approximation Scheme for Scheduling Heterogeneous Utility Jobs in Edge Computing</b> 
+        [<a href="assets/paper/TON 2023.pdf">paper</a>]. 
+        <span><b>Chi Zhang</b>, Haisheng Tan, Haoqiang Huang, Zhenhua Han, Shaofeng H-C Jiang, Guopeng Li, Xiang-Yang Li, </span>
+        <span>IEEE/ACM Transactions on Networking (ToN) 2023. (<b>CCF-A</b>) </span>
+    </li>
+</ul>
 
 </body>
 </html>
